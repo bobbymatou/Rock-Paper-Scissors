@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+        function getComputerChoice(){
+           let myArray = ['Rock', 'Paper', 'Scissors'];
+           let computerChoices = myArray[Math.floor(Math.random() * myArray.length)];
+           
+        }
+
+        function getHumanChoice() {
+            let humanChoice = prompt();
+            
+        }
+
+        let humanScore = 0;
+        let computerScore = 0;
+
+        function playRound(humanChoice, computerChoices) {
+           
+            getHumanChoice();
+            getComputerChoice();
+
+            if (humanChoice === "Paper" && computerChoices === "Scissors") {
+                console.log("Congrats Dumb ASS!!!!");
+            }
+            else {
+                console.log("IDK")
+            }
+        }
+
+        playRound();
+        
+    
+    </script>
+</body>
+</html>
